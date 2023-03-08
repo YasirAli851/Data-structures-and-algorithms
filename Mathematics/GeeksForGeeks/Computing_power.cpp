@@ -89,3 +89,5 @@ Now,the caller temp=power(3,2) have the value equals to 9 which is returned from
 Now,current function is power(3,2),we will do the temp=temp*temp that is 9=9*9 which is equals to 81 and then we will check the value of n of our callers, the caller of power(3,2) is power(3,5) and 5 is an odd number so, we will return temp*x that is = 81*3=243 to power(3,5).
 
 Now,current function is power(3,5) with the value as 243,and the caller of power(3,5) is main function.so,243 will be returned to the main function.
+
+*/
