@@ -1,3 +1,4 @@
+/*
 Sieve of Eratosthenes:-We use sieve of Eratosthenes in order to get all the prime number from 2 upto n.
 Input:
 n=12
@@ -12,7 +13,7 @@ step 2)After step 1,we will iterate through the vector from index 2 and mark all
 Step 3)after step 2,we iterate through the vector and print only that index i where the value of vector is marked as true.
 
 Lets have a look on code:-
-
+*/
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -43,6 +44,7 @@ int main()
     sieve_of_eratosthenes(n);
 }
 
+/*
 
 Lets understand the sieve_of_eratosthenes function:
 
@@ -178,3 +180,4 @@ So,the value on the vector at index 2,3,5,7 and 11 are marked as true.So,only th
 
 Output:- 2,3,5,7,11. 
 
+*/
