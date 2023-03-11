@@ -1,4 +1,4 @@
-Q:-Write a program to find the gcd or Hcf of two numbers.
+Q:-Write a program to find the gcd or Highest common factor of two numbers.
 
 //Approach 1:-Using iteration.
 
