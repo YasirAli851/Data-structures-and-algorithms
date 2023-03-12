@@ -1,3 +1,4 @@
+/*
 Iterative power(Binary exponentiation):-In this question we are going to calculate X to the power N using iterative method and binary exponentiation.
 
 Binary exponentiation:-
@@ -28,6 +29,8 @@ So,our answer will be 1024.
 
 Now,lets have a look on the code to perform this operation:-
 
+*/
+
 #include<iostream>
 using namespace std;
 int main()
@@ -45,6 +48,8 @@ int main()
     }
     cout<<res<<endl;
 }
+
+/*
 
 Lets understand how code is working:-
 Suppose the value of N=5 , X=4 and res=1.
@@ -106,3 +111,4 @@ n=0
 Iteration 4:-
 N=0 so we will not go inside while loop so, we will just print the value of res=1024 and 4 to the power 5 is equals to 1024.
 
+*/
