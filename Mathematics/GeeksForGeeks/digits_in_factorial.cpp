@@ -25,12 +25,6 @@ int main()
 	cout<<"number of digits in the factorial "<<n<<" is "<<floor(ans+1)<<endl;
 }
 
-1 0
-2 0.30103
-3 0.477121
-4 0.60206
-5 0.69897
-
 Lets understand the code:-
 
 So,our ans=0 initially.
