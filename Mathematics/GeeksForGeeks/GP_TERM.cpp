@@ -42,6 +42,6 @@ int main()
 // 1)find the ratio first.
 // Ratio can be found by doing B/A.
 // 2)Then calculating power of ratio with respect to N-1.
-// power can be found by doing pow(ratio,N-1) and i have stored the value of it inside variable result.
-// 3)Then multiplying the value of A with the value of pow(ratio,N-1).
+// power can be found by doing pow(ratio,N-1) and i have stored the value of it inside variable r.
+// 3)Then multiplying the value of A with the value of pow(ratio,N-1) and i have stored the multiplied value in the variable result.
 // multiplication can be done by doing A*pow(ratio,N-1).
