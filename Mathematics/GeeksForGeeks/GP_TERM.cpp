@@ -14,8 +14,7 @@ B = 2
 N = 5
 Output: 16
 Explanation: Common ratio = 2,
-Hence second term is 1*(2)(5-1) = 24 = 16 .
-*/
+Hence second term is 1 * (2 raise to the power 4) = 16 .
 
 #include<iostream>
 #include<math.h>
