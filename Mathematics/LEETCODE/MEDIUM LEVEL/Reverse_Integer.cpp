@@ -1,4 +1,4 @@
-Link to question:- https://leetcode.com/problems/reverse-integer/
+Link to question:- https://leetcode.com/problems/reverse-integer/ 
 Question:-Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
 
 Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
@@ -16,6 +16,7 @@ Input: x = 120
 Output: 21
 
 Approach:-
+
 step 1:- There are chances that after reversing,the value of integer can become more than (2 to the power 31  - 1) or the value of integer can become less than (- 2 to the power 31).so,we will store the number inside a variable of long long data type.
 
 step 2:-so,if we get the negative number then we will first convert the negative number into positive number by multiplying that number with -1.
