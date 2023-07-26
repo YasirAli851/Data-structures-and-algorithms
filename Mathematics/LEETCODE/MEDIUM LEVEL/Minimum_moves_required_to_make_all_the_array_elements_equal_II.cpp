@@ -91,7 +91,7 @@ ans=16.
 
 so,as the size of our array was 4,so we have iterated from 0 to 3 and after that we have moved out of loop and the final value of ans is the minimum number of moves required to make all the array elements equal,i.e 16.
 
-
+Thank you!
 
 
 
