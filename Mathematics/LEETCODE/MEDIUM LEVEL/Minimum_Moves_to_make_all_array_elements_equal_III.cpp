@@ -1,6 +1,7 @@
 You are given an array nums consisting of positive integers.
 
-You are also given an integer array queries of size m. For the ith query, you want to make all of the elements of nums equal to queries[i]. You can perform the following operation on the array any number of times:
+You are also given an integer array queries of size m. For the ith query, you want to make all of the elements of nums equal to queries[i]. You can 
+perform the following operation on the array any number of times:
 
 Increase or decrease an element of the array by 1.
 Return an array answer of size m where answer[i] is the minimum number of operations to make all elements of nums equal to queries[i].
@@ -28,22 +29,31 @@ Output: [20]
 Explanation: We can increase each value in the array to 10. 
 The total number of operations will be 8 + 1 + 4 + 7 = 20.
 
-Note:-My approach will be based on binary search,prefix sum and suffix sum.So,before going through my approach,plz have an idea of prefix sum,suffix sum,upper bound,lower bound and binary search.
+Note:-My approach will be based on binary search,prefix sum and suffix sum.So,before going through my approach,plz have an idea of prefix sum,suffix 
+sum,upper bound,lower bound and binary search.
 
 So,lets have a look at my approach:-
 
 step 1:-I will sort the vector,and then store the size of the vector inside a variable named "n".
 
-step 2:-after step 1,i will create three vectors,1st vector will be having name as prefix_sum of size (n + 1) and 2nd vector will be having name as suffix_sum of size (n + 1) and 3rd vector will be having name as ans.
+step 2:-after step 1,i will create three vectors,1st vector will be having name as prefix_sum of size (n + 1) and 2nd vector will be having name as
+suffix_sum of size (n + 1) and 3rd vector will be having name as ans.
 
-step 3:-After step 2,we will fill the prefix_sum vector(0 at index 0) and rest according to the nums vector and we will fill the suffix_sum vector (0 at index n) and rest according to the nums vector.
+step 3:-After step 2,we will fill the prefix_sum vector(0 at index 0) and rest according to the nums vector and we will fill the suffix_sum 
+vector (0 at index n) and rest according to the nums vector.
 
 step 4:-we will iterate through the query vector and obtain the lower bound of queries[i] on vector nums.
 so,for every lower bound of queries[i], we will store the index of value of lower bound in a variable position.
 
-step 5:-now,after finding position from step 4,we will check the number of elements present at the left of position index,and as well as check the number of element present at the right of position index including position index.
+step 5:-now,after finding position from step 4,we will check the number of elements present at the left of position index,and as well as check the 
+number of element present at the right of position index including position index.
 
-step 6:-after performing step 5,we will multiply the queries[i] with the count of the numbers present at the left of the position index and after that we will substract with the value that is present at prefix_sum[position] and store the result in a variable res1.Again i will multiply the queries[i] with the count of the numbers present at the right side of position index including position index and after that i will substract with the value that is present at the suffix_sum[position] and store the result in a variable res2. and then we will do the addition of both res1 and res2 and that addition will be the minimum moves to make all the array elements equal to that queries[i].Step 4 step 5 and step 6 will be done for all the values that is present inside queries vector.and we will store the value of minimum moves inside a vector called ans.
+step 6:-after performing step 5,we will multiply the queries[i] with the count of the numbers present at the left of the position index and after 
+that we will substract with the value that is present at prefix_sum[position] and store the result in a variable res1.Again i will multiply the 
+queries[i] with the count of the numbers present at the right side of position index including position index and after that i will substract with 
+the value that is present at the suffix_sum[position] and store the result in a variable res2. and then we will do the addition of both res1 and res2 
+and that addition will be the minimum moves to make all the array elements equal to that queries[i].Step 4 step 5 and step 6 will be done for all the 
+values that is present inside queries vector.and we will store the value of minimum moves inside a vector called ans.
 
 lets have a look at my code:-
 
@@ -116,7 +126,8 @@ when i=0.
     so,we will store this 14 in a variable res2.
     res2=14.
 
-    addition of res1 + res2 = 0 + 14 = 14.so,14 is the minimum moves required to make all the array elements equal to queries[0]=1.now,we will push back this 14 inside a vector called ans.
+    addition of res1 + res2 = 0 + 14 = 14.so,14 is the minimum moves required to make all the array elements equal to queries[0]=1.now,we will push 
+back this 14 inside a vector called ans.
 
     ans=[14,]
 
@@ -146,7 +157,8 @@ when i=1.
     so,we will store this 4 in a variable res2.
     res2=4.
 
-    addition of res1 + res2 = 6 + 4 = 10.so,10 is the minimum moves required to make all the array elements equal to queries[1]=5.now,we will push back this 10 inside a vector called ans.
+    addition of res1 + res2 = 6 + 4 = 10.so,10 is the minimum moves required to make all the array elements equal to queries[1]=5.now,we will push 
+back this 10 inside a vector called ans.
 
     ans=[14,10]
 
